@@ -1,0 +1,29 @@
+.content{
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 15px;
+}
+
+.guitarCard{
+  width: 150px;
+  height: 500px;
+}
+
+.guitarContent{
+  width: 90%;
+  height: 90%;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.guitarImg{
+  width: 90%;
+  display:block;
+  margin:auto;
+}
+
+.guitarname{
+  text-align: center;
+  font-weight: bold;
+}

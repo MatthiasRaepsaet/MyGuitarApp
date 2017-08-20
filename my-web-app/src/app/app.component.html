@@ -1,0 +1,18 @@
+<div class="body">
+  <header *ngIf="router.url !== '/' && router.url !== '/login' && router.url !== '/register'">
+    <nav>
+      <div class="nav-wrapper orange">
+        <a href="#" class="brand-logo">GuitarApp</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="/home">Home</a></li>
+          <li><a href="/guitarshop">Guitarshop</a></li>
+          <li><a href="/my-guitars">My guitars</a></li>
+          <li><a (click)="logout()">logout</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="main">
+    <router-outlet></router-outlet>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="container grey lighten-3 content z-depth-2" *ngIf="!detailedView">
+  <h1>Guitarshop</h1>
+  <div class="row guitarlist">
+    <div class="col s12 l4 guitarCard" *ngFor="let guitar of guitarList">
+      <div class="guitarContent white z-depth-1">
+        <img src={{guitar.photoUrl}} class="guitarImg">
+        <div class="guitarname">{{guitar.name}}</div>
+        <ul>
+          <li>Merk: {{guitar.brand}}</li>
+          <li>Type: {{guitar.type}}</li>
+          <li>Snaren: {{guitar.strings}}</li>
+          <li>Prijs: {{guitar.price}}</li>
+        </ul>
+        <a class="waves-effect waves-light btn orange" (click)="getDetails(guitar)">More info</a>
+      </div>
+    </div>
+  </div>
+</div>
+<app-detail [guitar]="guitar" *ngIf="detailedView" (terugEmitter)="terugReceiver($event)"></app-detail>
