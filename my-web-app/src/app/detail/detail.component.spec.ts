@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { DetailComponent } from './detail.component';
+import {UsersService} from "../services/users.service";
 
 describe('DetailComponent', () => {
   let component: DetailComponent;
@@ -8,6 +9,7 @@ describe('DetailComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      providers: [UsersService],
       declarations: [ DetailComponent ]
     })
     .compileComponents();
@@ -19,7 +21,5 @@ describe('DetailComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+
 });

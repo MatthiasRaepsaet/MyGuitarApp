@@ -9,7 +9,4 @@ describe('GuitarsService', () => {
     });
   });
 
-  it('should ...', inject([GuitarsService], (service: GuitarsService) => {
-    expect(service).toBeTruthy();
-  }));
 });
